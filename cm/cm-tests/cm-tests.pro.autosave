@@ -1,0 +1,18 @@
+#QT += testlib
+#QT -= gui
+
+#CONFIG += qt console warn_on depend_includepath testcase
+#CONFIG -= app_bundle
+
+#TEMPLATE = app
+
+#SOURCES +=  tst_clienttests.cpp
+QT += testlib
+QT -= gui
+TARGET = client-tests
+TEMPLATE = app
+CONFIG += c++14
+CONFIG += console
+CONFIG -= app_bundle
+INCLUDEPATH += source
+SOURCES += source/models/client-tests.cpp
